@@ -1,3 +1,3 @@
-exports.sum = (a, b) => {
-  return a + b;
+exports.sum = (...args) => {
+  return args.reduce((total, num) => total + num);
 };
