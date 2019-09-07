@@ -10,6 +10,7 @@ describe('App Test suite', () => {
   it('Should render a span with text (Welcome)', () => {
     const wrapper = rtl.render(<App />);
     // console.log(wrapper.debug());
+    // Now i realize there is more to test than this
     const element = wrapper.queryByText(/Welcome/);
     expect(element).toBeInTheDocument();
     expect(element).toBeTruthy();
